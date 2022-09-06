@@ -21,7 +21,8 @@ module.exports = {
     },
 
     entry: {
-        index: './src/index.pug',
+        colorsType: './src/UL kit/colorsType.pug',
+
     },
     devServer: {
         static: './dist',
