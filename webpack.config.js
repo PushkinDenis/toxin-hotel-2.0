@@ -1,5 +1,6 @@
 const path = require('path');
 const PugPlugin = require('pug-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     output: {
@@ -36,7 +37,8 @@ module.exports = {
                 outputPath: path.join(__dirname, './dist/styles/')
             },
 
-        })
+        }),
+        new CleanWebpackPlugin(),
     ],
 
     module: {
@@ -60,10 +62,7 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
                 type: 'asset/resource',
-                generator: {
-                    // output filename of fonts
-                    filename: '/assets/fonts/[name].[ext]',
-                },
+
             },
             {
                 test: /\.m?js$/,
