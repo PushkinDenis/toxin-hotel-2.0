@@ -21,7 +21,7 @@ module.exports = {
     },
 
     entry: {
-        colorsType: './src/UL kit/colorsType.pug',
+        colorsType: './src/UI kit/colorsType.pug',
 
     },
     devServer: {

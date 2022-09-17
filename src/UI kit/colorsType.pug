@@ -1,0 +1,17 @@
+doctype html
+html(lang = 'ru')
+    head
+        meta(charset="utf-8")
+        title= "Colors and Types"
+        link(href=require('/src/styles/style.scss') rel='stylesheet')
+        link(href=require('/src/styles/colorsType.scss') rel='stylesheet')
+
+    body
+        .container
+            img(src='/src/assets/icons/Toxin-icon.svg' alt='Toxin-icon here')
+            include /src/components/UI kit/colors and types/colors/colorBox.pug
+            +colorBox('color-box_dark100')
+
+
+
+

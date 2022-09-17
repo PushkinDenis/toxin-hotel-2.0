@@ -1,0 +1,5 @@
+@use '../components/UI kit/colors and types/colors/colorBox';
+.color-box_dark100 {
+@include colorBox.colorBox(red);
+};
+
