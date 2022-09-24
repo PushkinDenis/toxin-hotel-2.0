@@ -4,13 +4,15 @@ html(lang = 'ru')
         meta(charset="utf-8")
         title= "Colors and Types"
         link(href=require('/src/styles/style.scss') rel='stylesheet')
-        link(href=require('/src/styles/colorsType.scss') rel='stylesheet')
+        link(href=require('/src/styles/colors and types/colorsType.scss') rel='stylesheet')
 
     body
         .container
             img(src='/src/assets/icons/Toxin-icon.svg' alt='Toxin-icon here')
-            include /src/components/UI kit/colors and types/colors/colorBox.pug
-            include /src/components/UI kit/colors and types/colors/colorName.pug
+            include /src/components/UI kit/colors and types/colors/color-box
+            include /src/components/UI kit/colors and types/colors/color-name
+            include /src/components/UI kit/colors and types/types/text-type
+            include /src/components/UI kit/colors and types/types/text-type-description
             +colorBox('color-box_dark100')
             +colorBox('color-box_dark75')
             +colorBox('color-box_dark50')
@@ -25,6 +27,15 @@ html(lang = 'ru')
             +colorName('Dark Shade 5% ', '#1F2041')
             +colorName('Purple', '#BC9CFF')
             +colorName('Green', '#6FCF97')
+            +textType('h1', 'H1')
+            +textType('h2', 'H2')
+            +textType('h3', 'H3')
+            +textType('span','Body')
+            +typeDescription('h1','This one is the sub-section or widget title')
+            +typeDescription('h2','Next one is the item title inside widgets')
+            +typeDescription('h3','This is a label or CTA text')
+            +typeDescription('span','This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+
 
 
 
