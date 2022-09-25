@@ -10,9 +10,8 @@ html(lang = 'ru')
         .container
             img(src='/src/assets/icons/Toxin-icon.svg' alt='Toxin-icon here')
             include /src/components/UI kit/colors and types/colors/color-box
-            include /src/components/UI kit/colors and types/colors/color-name
             include /src/components/UI kit/colors and types/types/text-type
-            include /src/components/UI kit/colors and types/types/text-type-description
+        .color-box-wrapper
             +colorBox('color-box_dark100')
             +colorBox('color-box_dark75')
             +colorBox('color-box_dark50')
@@ -20,13 +19,14 @@ html(lang = 'ru')
             +colorBox('color-box_dark5')
             +colorBox('color-box_purple')
             +colorBox('color-box_green')
-            +colorName('Dark Shade 100% ', '#1F2041')
-            +colorName('Dark Shade 75% ', '#1F2041')
-            +colorName('Dark Shade 50% ', '#1F2041')
-            +colorName('Dark Shade 25% ', '#1F2041')
-            +colorName('Dark Shade 5% ', '#1F2041')
-            +colorName('Purple', '#BC9CFF')
-            +colorName('Green', '#6FCF97')
+            +colorDescription('Dark Shade 100% ', '#1F2041')
+            +colorDescription('Dark Shade 75% ', '#1F2041')
+            +colorDescription('Dark Shade 50% ', '#1F2041')
+            +colorDescription('Dark Shade 25% ', '#1F2041')
+            +colorDescription('Dark Shade 5% ', '#1F2041')
+            +colorDescription('Purple', '#BC9CFF')
+            +colorDescription('Green', '#6FCF97')
+        .text-type-wrapper
             +textType('h1', 'H1')
             +textType('h2', 'H2')
             +textType('h3', 'H3')

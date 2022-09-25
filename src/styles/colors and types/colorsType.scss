@@ -1,7 +1,5 @@
 @use 'colors/color-box';
-@use 'colors/color-name';
 @use 'types/text-type';
-@use 'types/text-type-description';
 .color-box_dark100 {
 @include color-box.colorBox(#1F2041);
 };
@@ -24,10 +22,10 @@
   @include color-box.colorBox(#6FCF97);
 };
 h2 {
-  @include color-name.colorName
+  @include color-box.colorName
 };
 span {
-  @include color-name.colorCode
+  @include color-box.colorCode
 };
 .text-type__h1 {
   @include text-type.textType(24px, 30px)
@@ -42,14 +40,43 @@ span {
   @include text-type.textType(14px, 24px)
 };
 .type-description__h1{
-  @include text-type-description.typeDescription(24px, 30px, #1F2041)
+  @include text-type.typeDescription(24px, 30px, #1F2041)
 };
 .type-description__h2{
-  @include text-type-description.typeDescription(19px, 24px, #1F2041)
+  @include text-type.typeDescription(19px, 24px, #1F2041)
 };
 .type-description__h3{
-  @include text-type-description.typeDescription(12px, 16px, #1F2041)
+  @include text-type.typeDescription(12px, 16px, #1F2041)
 };
 .type-description__span{
-  @include text-type-description.typeDescription(14px, 24px, rgba(31, 32, 65, 0.75))
+  @include text-type.typeDescription(14px, 24px, rgba(31, 32, 65, 0.75))
 };
+.container{
+  display: flex;
+  flex-direction:row;
+};
+.color-box-wrapper{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+};
+.color-name-wrapper{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+};
+.text-type-wrapper{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+};
+.text-type-description-wrapper{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
