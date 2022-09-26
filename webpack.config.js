@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     output: {
         path: path.join(__dirname, 'dist/'),
-        publicPath: '',
+        publicPath: '/',
         // output filename of JS files
         filename: '[name].[contenthash:8].js'
     },
@@ -21,12 +21,17 @@ module.exports = {
     },
 
     entry: {
-        colorsType: './src/UI kit/colorsType.pug',
-
+        index: './src/ui-kit/colors-types.pug',
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, './dist'),
+            directory: path.join(__dirname, 'dist'),
+        },
+        watchFiles: {
+            paths: ['src/**/*.*'],
+            options: {
+                usePolling: true,
+            },
         },
         compress: true,
         port: 9000,
