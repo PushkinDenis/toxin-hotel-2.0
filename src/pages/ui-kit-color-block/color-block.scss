@@ -1,0 +1,60 @@
+@use '../../components/color-box/color-box';
+@use '../../components/text-type/text-type';
+.color-box_dark100 {
+@include color-box.colorBox(#1F2041);
+};
+.color-box_dark75 {
+  @include color-box.colorBox(rgba(31, 32, 65, 0.75));
+};
+.color-box_dark50 {
+  @include color-box.colorBox(rgba(31, 32, 65, 0.5));
+};
+.color-box_dark25 {
+  @include color-box.colorBox(rgba(31, 32, 65, 0.25));
+};
+.color-box_dark5 {
+  @include color-box.colorBox(rgba(31, 32, 65, 0.05));
+};
+.color-box_purple {
+  @include color-box.colorBox(#BC9CFF);
+};
+.color-box_green {
+  @include color-box.colorBox(#6FCF97);
+};
+h2 {
+  @include color-box.colorName
+};
+span {
+  @include color-box.colorCode
+};
+.text-type__h1 {
+  @include text-type.textType(24px,normal,30px,rgba(31, 32, 65, 0.25))
+};
+.text-type__h2 {
+  @include text-type.textType(19px,normal,24px,rgba(31, 32, 65, 0.25))
+};
+.text-type__h3 {
+  @include text-type.textType(12px,normal,16px,rgba(31, 32, 65, 0.25))
+};
+.text-type__span{
+  @include text-type.textType(14px,normal,24px,rgba(31, 32, 65, 0.25))
+};
+.text-type__description-h1{
+  @include text-type.textType(24px,bold, 30px, #1F2041)
+};
+.text-type__description-h2{
+  @include text-type.textType(19px,bold,24px, #1F2041)
+};
+.text-type__description-h3{
+  @include text-type.textType(12px,bold,16px, #1F2041)
+};
+.text-type__description-span{
+  @include text-type.textType(14px,bold,24px, rgba(31, 32, 65, 0.75))
+};
+.container{
+  max-width: 1160px;
+};
+
+
+
+

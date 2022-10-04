@@ -1,0 +1,5 @@
+mixin colorBox(color, colorName, colorCode)
+    div(class=`${color}`)
+    h2(class='color-box__' + `${colorName}`)=(`${colorName}`)
+    span(class=`color-box_${colorCode}`)=(`${colorCode}`)
+

@@ -15,13 +15,12 @@ module.exports = {
     resolve: {
         alias: {
             // use alias to avoid relative paths like `./../../images/`
-            Images: path.join(__dirname, './src/images/'),
-            Fonts: path.join(__dirname, './src/fonts/')
+            Images: path.join(__dirname, './public/images/'),
+            Fonts: path.join(__dirname, './public/Montserrat/')
         }
     },
-
     entry: {
-        index: './src/ui-kit/colors-types.pug',
+        color: './src/pages/ui-kit-color-block/index.pug',
     },
     devServer: {
         static: {
