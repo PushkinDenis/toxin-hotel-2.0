@@ -1,32 +1,6 @@
 @use '../../components/color-box/color-box';
 @use '../../components/text-type/text-type';
-.color-box_dark100 {
-@include color-box.colorBox(#1F2041);
-};
-.color-box_dark75 {
-  @include color-box.colorBox(rgba(31, 32, 65, 0.75));
-};
-.color-box_dark50 {
-  @include color-box.colorBox(rgba(31, 32, 65, 0.5));
-};
-.color-box_dark25 {
-  @include color-box.colorBox(rgba(31, 32, 65, 0.25));
-};
-.color-box_dark5 {
-  @include color-box.colorBox(rgba(31, 32, 65, 0.05));
-};
-.color-box_purple {
-  @include color-box.colorBox(#BC9CFF);
-};
-.color-box_green {
-  @include color-box.colorBox(#6FCF97);
-};
-h2 {
-  @include color-box.colorName
-};
-span {
-  @include color-box.colorCode
-};
+
 .text-type__h1 {
   @include text-type.textType(24px,normal,30px,rgba(31, 32, 65, 0.25))
 };
@@ -53,8 +27,19 @@ span {
 };
 .container{
   max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: content-box;
 };
-
+.color-block{
+  display: flex;
+  justify-content: space-between;
+};
+.color-box-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+}
 
 
 

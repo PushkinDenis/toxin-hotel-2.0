@@ -1,5 +1,6 @@
 mixin colorBox(color, colorName, colorCode)
-    div(class=`${color}`)
-    h2(class='color-box__' + `${colorName}`)=(`${colorName}`)
-    span(class=`color-box_${colorCode}`)=(`${colorCode}`)
-
+    div(class='color-box')
+        div(class=`color-box__square color-box__square_${color}`)
+        div(class='color-box__text-block')
+            h2(class='color-box__title')=(`${colorName}`)
+            span(class='color-box__description')=(`${colorCode}`)
