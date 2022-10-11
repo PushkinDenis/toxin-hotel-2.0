@@ -1,5 +1,6 @@
 @use '../../components/color-box/color-box';
 @use '../../components/text-type/text-type';
+@use '../../components/ui-kit-header/ui-kit-header';
 
 .text-type__h1 {
   @include text-type.textType(24px,normal,30px,rgba(31, 32, 65, 0.25))
@@ -22,23 +23,37 @@
 .text-type__description-h3{
   @include text-type.textType(12px,bold,16px, #1F2041)
 };
-.text-type__description-span{
+.text-type__description-span {
   @include text-type.textType(14px,bold,24px, rgba(31, 32, 65, 0.75))
-};
-.container{
+}
+
+
+.container {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 50px;
   box-sizing: content-box;
-};
-.color-block{
+}
+
+
+.color-block {
   display: flex;
   justify-content: space-between;
-};
+}
+
+
 .color-box-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 24px;
+}
+
+
+
+.ui-kit-header {
+  display: flex;
+  height: 145px;
+  padding: 30px;
 }
 
 
