@@ -32,6 +32,21 @@
   padding: 30px;
 }
 
+@media screen and (max-device-width: 228px){
+  .color-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-type__tag {
+    width: 50px;
+    text-align: start;
+  }
+
+  .text-type-wrapper {
+    padding-top: 50px;
+  }
+}
 
 
 
