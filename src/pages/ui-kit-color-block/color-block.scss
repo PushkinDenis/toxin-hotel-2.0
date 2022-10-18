@@ -2,45 +2,17 @@
 @use '../../components/text-type/text-type';
 @use '../../components/ui-kit-header/ui-kit-header';
 
-.text-type__h1 {
-  @include text-type.textType(24px,normal,30px,rgba(31, 32, 65, 0.25))
-};
-.text-type__h2 {
-  @include text-type.textType(19px,normal,24px,rgba(31, 32, 65, 0.25))
-};
-.text-type__h3 {
-  @include text-type.textType(12px,normal,16px,rgba(31, 32, 65, 0.25))
-};
-.text-type__span{
-  @include text-type.textType(14px,normal,24px,rgba(31, 32, 65, 0.25))
-};
-.text-type__description-h1{
-  @include text-type.textType(24px,bold, 30px, #1F2041)
-};
-.text-type__description-h2{
-  @include text-type.textType(19px,bold,24px, #1F2041)
-};
-.text-type__description-h3{
-  @include text-type.textType(12px,bold,16px, #1F2041)
-};
-.text-type__description-span {
-  @include text-type.textType(14px,bold,24px, rgba(31, 32, 65, 0.75))
-}
-
-
 .container {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 50px;
-  box-sizing: content-box;
 }
-
 
 .color-block {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
-
 
 .color-box-wrapper {
   display: grid;
@@ -48,13 +20,19 @@
   row-gap: 24px;
 }
 
-
+.text-type-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+}
 
 .ui-kit-header {
   display: flex;
   height: 145px;
   padding: 30px;
 }
+
+
 
 
 

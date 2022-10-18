@@ -1,6 +1,6 @@
+# Ignore artifacts:
 .idea/
 .idea/.gitignore
 node_modules/
 vscode/
-.prettierignore
-.prettierrc.json
+dist/

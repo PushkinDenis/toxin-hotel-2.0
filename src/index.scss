@@ -1,14 +1,13 @@
 @import "/public/fonts/Montserrat/Montserrat.css";
 $fontFamily: 'Montserrat';
 
-
 html, body {
   margin: 0;
   font-family: $fontFamily;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
+  margin-block: 0;
 }

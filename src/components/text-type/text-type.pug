@@ -1,3 +1,4 @@
-mixin textType(tagName,tagContent,typeDescription)
-    #{tagName}(class='text-type__'+`${tagName}`)=`${tagContent}`
-    #{tagName}(class='text-type__description-'+`${tagName}`)=`${typeDescription}`
+mixin textType(tagName,tagContent, typeDescription)
+    .text-type
+        #{tagName}(class=`text-type__tag text-type__tag_${tagName}`)=`${tagContent}`
+        #{tagName}(class=`text-type__description text-type__description_${tagName}`)=`${typeDescription}`

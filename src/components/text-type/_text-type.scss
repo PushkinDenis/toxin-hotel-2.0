@@ -1,8 +1,58 @@
-@mixin textType($fontSize,$fontWeight,$line-height,$fontColor){
-  margin: 0;
-  padding: 0;
-  font-size: $fontSize;
-  line-height: $line-height;
-  font-weight: $fontWeight;
-  color: $fontColor;
-};
+.text-type {
+  display: flex;
+  align-items: flex-start;
+  max-width: 470px;
+
+  &__tag {
+    color: rgba(31, 32, 65, 0.25);
+    font-weight: normal;
+    width: 100px;
+    text-align: right;
+    flex-shrink: 0;
+
+    &_h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &_h2 {
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    &_h3 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &_p {
+      font-size: 14px;
+      line-height: 24;
+    }
+  }
+
+  &__description {
+    margin-left: 30px;
+
+    &_h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &_h2 {
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    &_h3 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &_p {
+      font-size: 14px;
+      line-height: 24;
+      color: rgba(31, 32, 65, 0.25);
+    }
+  }
+}
