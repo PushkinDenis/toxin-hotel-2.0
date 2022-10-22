@@ -21,6 +21,7 @@ module.exports = {
     },
     entry: {
         color: './src/pages/ui-kit-color-block/index.pug',
+        formElements: './src/pages/ui-kit-form-elements/index.pug',
     },
     devServer: {
         static: {
