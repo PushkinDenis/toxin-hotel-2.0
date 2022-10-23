@@ -1,0 +1,7 @@
+mixin dropdown(label,name, option, option_1, option_2, option_3)
+    label(class=`dropdown__${label}`)= label
+        select(class=`dropdown__${name}`)
+            option(class=`dropdown__start-value` value='')= option
+            option(class=`dropdown__option_1` value= option_1)=option_1
+            option(class=`dropdown__option_2` value= option_2)=option_2
+            option(class=`dropdown__option_3` value= option_3)=option_3

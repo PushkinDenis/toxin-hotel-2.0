@@ -1,5 +1,5 @@
-mixin inputField(name,type,placeholder,value,label,description)
+mixin inputField(name,type,placeholder,value,label,description,descriptionSpan)
     label(class=`input-field input-field__${name}-label`)= label
         input(type=type class=`input-field input-field__${name}` placeholder=placeholder value=value)
         if description !== ''
-            span(class=`input-field__${name}_${description}`)= description
+            span(class=`input-field__${name}_${description}`)= descriptionSpan
