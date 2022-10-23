@@ -1,0 +1,12 @@
+extends /src/components/layout.pug
+block title
+    title= "Form elements"
+block links
+    link(href=require('../../index.scss') rel='stylesheet')
+block header
+    include /src/components/ui-kit-header/ui-kit-header
+block content
+    include /src/components/text-field/text-field
+    +textField('text-field', 'text', 'Email','' , 'TEXT FIELD','default')
+    +textField('text-field', 'text', 'Email','' , 'TEXT FIELD','')
+

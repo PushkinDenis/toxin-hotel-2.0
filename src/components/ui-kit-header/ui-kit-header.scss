@@ -1,4 +1,12 @@
-.toxin-logo {
-  width: 48px;
-  height: 48px;
+.ui-kit-header {
+  display: flex;
+  height: 145px;
+  padding: 30px;
+
+
+  &__toxin-logo {
+    width: 48px;
+    height: 48px;
+  }
+
 }
