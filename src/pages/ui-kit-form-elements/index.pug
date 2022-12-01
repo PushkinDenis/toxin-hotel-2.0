@@ -3,12 +3,15 @@ block title
     title= "Form elements"
 block links
     link(href=require('../../index.scss') rel='stylesheet')
+    link(href=require('form-elements.scss') rel='stylesheet')
+
 block header
     include /src/components/ui-kit-header/ui-kit-header
 block content
     include /src/components/text-field/text-field
-    include /src/components/dropdown/dropdown
+    include /src/components/dropdown/select
     +textField('text-field', 'text', 'Email','' , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field', 'text', 'Email','This is pretty awesome' , 'TEXT FIELD','hover_or_focus','HOVER/FOCUS')
-    +dropdown('dropdown','dropdown', 'Сколько гостей', 'Взрослые', 'Дети', 'Младенцы')
-
+    +dropdown('select','text','Сколько гостей', '','dropdown','','','expand_more', 'Взрослые', 'Дети', 'Младенцы')
+block scripts
+    script(src=require('../../components/dropdown/select'))

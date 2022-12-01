@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Material icons';
+    src: url('MaterialIcons-Regular.ttf');
+    src: local('☺'), url('MaterialIcons-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

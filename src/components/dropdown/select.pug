@@ -1,0 +1,8 @@
+mixin dropdown (name,type,placeholder,value,label,description,descriptionSpan,materialIcon,li1,li2,li3)
+    .select
+        .select-wrapper
+            +inputField(name, type,placeholder,value,label,description,descriptionSpan,materialIcon)
+        ul(class='dropdown__list')
+            li.dropdown__li1= li1
+            li.dropdown__li2= li2
+            li.dropdown__li3= li3
