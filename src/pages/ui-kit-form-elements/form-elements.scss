@@ -1,2 +1,6 @@
 @use "../../components/dropdown/select";
 @use "../../components/input-field/input-field";
+@use "../../index";
+.input-field {
+  margin: 20px;
+}

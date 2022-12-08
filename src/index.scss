@@ -1,17 +1,18 @@
 @import "/public/fonts/Montserrat/Montserrat.css";
 @import "/public/fonts/Material_icons/Material_icons.css";
-$fontFamily: "Montserrat";
-
-html,
+@import "variables.scss";
 body {
   margin: 0;
   font-family: $fontFamily;
 }
 
 * {
+  font-family: $fontFamily;
   box-sizing: border-box;
   margin: 0;
   margin-block: 0;
+  outline: 0;
+  background: $colorWhite;
 }
 
 .material-icons {

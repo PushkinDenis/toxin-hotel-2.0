@@ -1,0 +1,40 @@
+@import "../../index";
+.input-field {
+  display: grid;
+  grid-template: "label c" "b b" / 1fr 1fr;
+  max-width: 320px;
+  max-height: fit-content;
+  &__label {
+    grid-area: label;
+    justify-self: start;
+    color: $colorDark100;
+    @extend %fontH3;
+  }
+  &__input {
+    grid-area: b;
+    @extend %fontNormal;
+    padding: 13px 0px 13px 15px;
+    outline-color: $colorDark25;
+    border-radius: 4px;
+    background: inherit;
+  }
+  ::-webkit-input-placeholder {
+    color: $colorDark25;
+  }
+  &_default {
+    border: solid 1px;
+    outline-color: $colorDark25;
+    color: $colorDark25;
+  }
+  &_hover {
+    border: solid 1px;
+    outline-color: $colorDark75;
+    color: $colorDark75;
+  }
+
+  &__description {
+    grid-area: c;
+    justify-self: end;
+    color: $colorDark50;
+  }
+}

@@ -1,0 +1,32 @@
+$fontFamily: "Montserrat";
+$colorDark100: #1f2041;
+$colorDark75: rgba(31, 32, 65, 0.75);
+$colorDark50: rgba(31, 32, 65, 0.5);
+$colorDark25: rgba(31, 32, 65, 0.25);
+$colorDark5: rgba(31, 32, 65, 0.05);
+$colorPurple: #bc9cff;
+$colorGreen: #6fcf97;
+$colorWhite: #ffffff;
+%fontH1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+%fontH2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%fontH3 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+%fontNormal {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
