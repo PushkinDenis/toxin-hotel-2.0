@@ -1,1 +1,1 @@
-import("../../components/dropdown/select");
+import("../../components/select/select");

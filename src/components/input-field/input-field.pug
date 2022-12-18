@@ -1,5 +1,10 @@
 mixin inputField(name, type, placeholder, value, label, state, stateDescript)
-    div(class = `input-field`)
+    if name !== 'select'
+        div(class = `input-field`)
+            label(class = `input-field__label`)=label
+            input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__input`, class = `input-field_${state}`)
+            span(class = `input-field__description`)= stateDescript
+    else
         label(class = `input-field__label`)=label
-        input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__input`, class = `input-field_${state}`)
-        span(class = `input-field__description`)= stateDescript
+        div.input-field__input-wrapper
+            input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__input-select`, readonly)

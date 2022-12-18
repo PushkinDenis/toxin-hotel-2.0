@@ -1,0 +1,8 @@
+mixin select (name,type,placeholder,value,label, state, stateDescript, li1,li2,li3)
+    .select
+        +inputField(name, type, placeholder, value, label, state, stateDescript)
+        ul(class='select__list')
+            li.select__li1= li1
+                span(class = `select__span`)= li1
+            li.select__li2= li2
+            li.select__li3= li3
