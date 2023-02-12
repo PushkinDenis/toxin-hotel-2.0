@@ -10,10 +10,12 @@ block header
 block content
     include /src/components/text-field/text-field
     include /src/components/select/select
+    include /src/components/checkbox/checkbox
     +textField('text-field','Email',null , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field','Email','This is pretty awesome', 'TEXT FIELD','hover','HOVER/FOCUSED')
-    +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'li1','li2','li3')
+    +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы')
+    +checkbox('span')
+
 
 block scripts
-    script(src=require('../../components/select/select'))
-    script(src=require('../../components/counter/counter'))
+    script(src=require('index'))
