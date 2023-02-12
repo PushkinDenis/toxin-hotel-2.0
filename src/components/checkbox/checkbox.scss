@@ -1,0 +1,48 @@
+@import "../../index";
+.checkbox {
+  &__label {
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+  }
+  &__description {
+    padding-left: 30px;
+  }
+  &__ui-input {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: $border1 $colorDark25;
+    border-radius: 4px;
+  }
+
+  &__input {
+    -webkit-appearance: none;
+    &:checked + .checkbox__ui-input {
+      border: 1px solid $colorPurple;
+    }
+
+    &:checked + .checkbox__ui-input::before {
+      content: "";
+      width: 8px;
+      height: 2px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform-origin: 0 100%;
+      transform: rotate(315deg);
+    }
+    &:checked + .checkbox__ui-input::after {
+      content: "";
+      width: 5px;
+      height: 2px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform-origin: 0 100%;
+      transform: rotate(220deg);
+    }
+  }
+}
