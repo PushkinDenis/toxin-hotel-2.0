@@ -5,27 +5,9 @@
     align-items: center;
     justify-content: center;
     max-width: 92px;
+    padding: 0;
   }
-  &__minus-button {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: $border1;
-    color: $colorDark25;
-    position: relative;
-    margin-right: 5px;
 
-    &:after {
-      content: "";
-      position: absolute;
-      width: 8px;
-      height: 2px;
-      background-color: $colorDark25;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
   &__value {
     border: none;
     width: 25px;
@@ -34,37 +16,61 @@
     display: block;
     text-align: center;
   }
-  &__plus-button {
+
+  &__btn {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: $border1;
-    color: $colorDark25;
+    color: $colorDark50;
     position: relative;
-    margin-left: 5px;
+  }
 
+  &_minus-btn {
+    margin-right: 5px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 2px;
+      background-color: $colorDark50;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &_plus-btn {
+    margin-left: 5px;
     &:before {
       content: "";
       position: absolute;
       width: 8px;
       height: 2px;
-      background-color: lightgrey;
+      background-color: $colorDark50;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
 
       display: block;
     }
+
     &:after {
       display: block;
       content: "";
       position: absolute;
       width: 2px;
       height: 8px;
-      background-color: lightgrey;
+      background-color: $colorDark50;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+  &_inactive {
+    color: $colorDark25;
+    &:after {
+      background-color: $colorDark25;
     }
   }
 }
