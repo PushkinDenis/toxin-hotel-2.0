@@ -1,7 +1,7 @@
-mixin select (name,type,placeholder,value,label, state, stateDescript, li1,li2,li3)
-    .select
-        +inputField(name, type, placeholder, value, label, state, stateDescript)
-        ul(class='select__list')
+mixin select (name,type,placeholder,value,label, state, stateDescript, li1,li2,li3, selectId,selectList)
+    span(class = 'select')
+        +inputField(name, type, placeholder, value, label, state, stateDescript, selectId)
+        ul(class='select_hided' data-list-id = `${selectList}`)
             li.select__li= li1
                 include ../counter/counter
             li.select__li= li2
