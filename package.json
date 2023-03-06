@@ -27,6 +27,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "jquery": "^3.6.3",
-    "jquery-ui": "^1.13.2"
+    "jquery-ui": "^1.13.2",
+    "jquery.maskedinput": "^1.4.1"
   }
 }
