@@ -1,7 +1,7 @@
 const path = require("path");
 const PugPlugin = require("pug-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
+const webpack = require("webpack");
 module.exports = {
   mode: "development",
   output: {
@@ -55,6 +55,11 @@ module.exports = {
       },
     }),
     new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.$": "jquery",
+    }),
   ],
 
   module: {
