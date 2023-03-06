@@ -35,4 +35,12 @@
     outline-color: $colorDark75;
     color: $colorDark75;
   }
+  &_masked {
+    outline-color: $colorDark25;
+    color: $colorDark25;
+    &:focus {
+      outline-color: $colorDark75;
+      color: $colorDark75;
+    }
+  }
 }

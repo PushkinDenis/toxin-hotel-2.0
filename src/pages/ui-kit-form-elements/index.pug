@@ -4,13 +4,13 @@ block title
 block links
     link(href=require('../../index.scss') rel='stylesheet')
     link(href=require('form-elements.scss') rel='stylesheet')
-
 block header
     include /src/components/ui-kit-header/ui-kit-header
 block content
     include /src/components/text-field/text-field
     include /src/components/select/select
     include /src/components/checkbox/checkbox
+    include /src/components/masked-text-field/masked-text-field
     +textField('text-field','Email',null , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field','Email','This is pretty awesome', 'TEXT FIELD','hover','HOVER/FOCUSED')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','0','0')
@@ -18,6 +18,8 @@ block content
     +checkbox('span')
     +checkbox('span')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','1','1')
+    +masked-text-field('masked-text-field','ДД.ММ.ГГГГ','', 'MASKED TEXT FIELD','masked', '')
 
 block scripts
     script(src=require('index'))
+
