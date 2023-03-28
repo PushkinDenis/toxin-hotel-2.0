@@ -19,6 +19,11 @@ $border1: solid 1px;
   font-size: 20px;
   line-height: 24px;
 }
+%fontH2Imp {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
+}
 
 %fontH3 {
   font-weight: bold;
@@ -30,6 +35,11 @@ $border1: solid 1px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+}
+%fontNormalImp {
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
 }
 ul {
   padding-inline-start: 0;
