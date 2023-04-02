@@ -135,27 +135,80 @@ thead tr:nth-child(-n + 1) {
 .daterangepicker td.active {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 50%;
-  z-index: 1;
+  z-index: 100;
+  position: relative;
 }
-td.active:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #e8e7fe;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  z-index: -1;
-  opacity: 50%;
-}
+//td.active:before {
+//  content: "";
+//  position: absolute;
+//  width: 40px;
+//  height: 40px;
+//  background-color: #e8e7fe;
+//  top: 50%;
+//  right: 50%;
+//  transform: translate(50%, -50%);
+//  z-index: -1;
+//  opacity: 50%;
+//}
 .daterangepicker td:hover {
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-color: transparent;
   color: #ffffff !important;
   border-radius: 50%;
+  z-index: 100;
 }
 
 .daterangepicker td.in-range {
   background-color: #e8e7fe;
+}
+.daterangepicker .active.start-date:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  //background-color: #e8e7fe;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: -1;
+  opacity: 100%;
+
+  background: linear-gradient(to right, transparent 50%, #e8e7fe 50%);
+}
+.daterangepicker .active.start-date:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.daterangepicker .active.end-date:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  //background-color: #e8e7fe;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: -1;
+  opacity: 100%;
+  background: linear-gradient(to left, #ffffffff, #e8e7fe 50%);
+}
+.daterangepicker .active.end-date:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
 }
