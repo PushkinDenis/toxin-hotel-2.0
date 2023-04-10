@@ -3,6 +3,10 @@ import("../../components/checkbox/checkbox");
 import("../../components/counter/counter");
 import("../../components/masked-text-field/masked-text-field");
 import("../../components/datepicker/datepicker");
+import("../../components/range-slider/range-slider");
+
+require('wnumb/wNumb');
+require('nouislider/dist/nouislider');
 require("jquery.maskedinput/src/jquery.maskedinput");
 require("jquery-ui/dist/jquery-ui");
 require("moment/moment");

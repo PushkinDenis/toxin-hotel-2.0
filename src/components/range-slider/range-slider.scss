@@ -1,0 +1,45 @@
+@use "./node_modules/nouislider/dist/nouislider.css";
+@import "../../index";
+.noUi-connect {
+  background: $greenGrad;
+}
+.range-slider {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 6px;
+  border-radius: 3px;
+  position: relative;
+  &__wrapper {
+    display: grid;
+    max-width: 266px;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 23px;
+    border-color: $colorDark25;
+  }
+  &__label {
+    @extend %fontH3;
+  }
+  &__values {
+    @extend %fontNormal;
+    text-align: end;
+  }
+}
+.noUi-handle:before,
+.noUi-handle:after {
+  content: "";
+  display: none;
+}
+.noUi-horizontal .noUi-handle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $greenGrad;
+  right: -1px;
+  border: $colorWhite solid 2px;
+  box-sizing: content-box;
+
+}
+.noUi-touch-area{
+  display: none;
+}

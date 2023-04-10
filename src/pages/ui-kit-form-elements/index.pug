@@ -12,6 +12,7 @@ block content
     include /src/components/checkbox/checkbox
     include /src/components/masked-text-field/masked-text-field
     include /src/components/datepicker/datepicker
+    include /src/components/range-slider/range-slider
     +textField('text-field','Email',null , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field','Email','This is pretty awesome', 'TEXT FIELD','hover','HOVER/FOCUSED')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','0','0')
@@ -21,6 +22,7 @@ block content
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','1','1')
     +masked-text-field('masked-text-field','ДД.ММ.ГГГГ','', 'MASKED TEXT FIELD','masked', '')
     +datepicker('name', 'text', 'vsdvs', '', '', '_datepicker')
+    +range-slider('RANGE SLIDER')
 
 block scripts
     script(src=require('index'))
