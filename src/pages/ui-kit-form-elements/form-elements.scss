@@ -5,6 +5,8 @@
 @use "../../components/checkbox/checkbox";
 @use "../../components/datepicker/datepicker";
 @use "../../components/range-slider/range-slider";
-.input-field {
+.input-field,
+.input-field__datepicker-wrapper,
+.range-slider__wrapper {
   margin: 20px;
 }

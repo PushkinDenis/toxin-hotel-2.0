@@ -1,4 +1,4 @@
-mixin inputField(name, type, placeholder, value, label, state, stateDescript, selectId)
+mixin inputField(name, type, placeholder, value, label, state, stateDescript, selectId, elem)
     if name !== 'select'
         div(class = `input-field`)
             label(class = `input-field__label`)=label
@@ -8,3 +8,7 @@ mixin inputField(name, type, placeholder, value, label, state, stateDescript, se
         label(class = `input-field__label`)=label
             div(class = 'input-field__input-wrapper' data-select-input)
                 input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__select`, readonly, data-select-id=`${selectId}`)
+
+
+
+

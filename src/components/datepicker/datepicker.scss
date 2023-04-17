@@ -1,5 +1,45 @@
 @use "./node_modules/daterangepicker/daterangepicker.css";
 @import "../../index";
+
+.input-field {
+  &__datepicker-wrapper {
+    display: grid;
+    max-width: 320px;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: url("/public/icons/material-icons/expand_more.svg");
+      width: 24px;
+      height: 24px;
+      justify-self: end;
+      align-self: center;
+      padding-right: 20px;
+      top: 43%;
+    }
+    &::after {
+      position: absolute;
+      content: url("/public/icons/material-icons/expand_more.svg");
+      width: 24px;
+      height: 24px;
+      justify-self: start;
+      align-self: center;
+      top: 43%;
+      padding-left: 115px;
+    }
+  }
+  &__datepicker {
+    width: 150px;
+    height: 44px;
+  }
+  &__start-date {
+    border-color: $colorDark25;
+  }
+
+  &__end-date {
+    border-color: $colorDark25;
+  }
+}
 .daterangepicker .drp-calendar.right {
   position: absolute !important;
   right: 0 !important;
@@ -211,4 +251,10 @@ thead tr:nth-child(-n + 1) {
   transform: translate(50%, -50%);
   border-radius: 50%;
   z-index: -1;
+}
+.daterangepicker.opensright:after {
+  display: none;
+}
+.daterangepicker.opensright:before {
+  display: none;
 }

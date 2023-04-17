@@ -16,13 +16,11 @@ block content
     +textField('text-field','Email',null , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field','Email','This is pretty awesome', 'TEXT FIELD','hover','HOVER/FOCUSED')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','0','0')
-    +checkbox('span')
-    +checkbox('span')
-    +checkbox('span')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','1','1')
     +masked-text-field('masked-text-field','ДД.ММ.ГГГГ','', 'MASKED TEXT FIELD','masked', '')
-    +datepicker('name', 'text', 'vsdvs', '', '', '_datepicker')
-    +range-slider('RANGE SLIDER')
+    +datepicker('name', 'text', 'ДД.ММ.ГГГГ', '', 'DATE DROPDOWN', 'datepicker')
+
+
 
 block scripts
     script(src=require('index'))
