@@ -1,6 +1,6 @@
 mixin inputField(name, type, placeholder, value, label, state, stateDescript, selectId, elem)
     if name !== 'select'
-        div(class = `input-field`)
+        div(class = `input-field` class=`input-field__${name}-wrapper`)
             label(class = `input-field__label` class = `input-field__label-${name}`)=label
             input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__input`, class = `input-field_${state}`, data-input-field =true)
             span(class = `input-field__description`)= stateDescript

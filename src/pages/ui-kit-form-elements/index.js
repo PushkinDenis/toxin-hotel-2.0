@@ -6,6 +6,7 @@ import("../../components/datepicker/datepicker");
 import("../../components/range-slider/range-slider");
 import("../../components/filter-date-select/filter-date-select");
 import("../../components/input-field/input-field");
+import("../../components/subscription-text-field/subscription-text-field");
 require("wnumb/wNumb");
 require("nouislider/dist/nouislider");
 require("jquery.maskedinput/src/jquery.maskedinput");

@@ -1,19 +1,21 @@
-extends /src/components/layout.pug
+extends ../../components/layout.pug
 block title
     title= "Form elements"
 block links
     link(href=require('../../index.scss') rel='stylesheet')
     link(href=require('form-elements.scss') rel='stylesheet')
 block header
-    include /src/components/ui-kit-header/ui-kit-header
+    include ../../components/ui-kit-header/ui-kit-header
 block content
-    include /src/components/text-field/text-field
-    include /src/components/select/select
-    include /src/components/checkbox/checkbox
-    include /src/components/masked-text-field/masked-text-field
-    include /src/components/datepicker/datepicker
-    include /src/components/range-slider/range-slider
-    include /src/components/filter-date-select/filter-date-select
+    include ../../components/input-field/input-field
+    include ../../components/text-field/text-field
+    include ../../components/select/select
+    include ../../components/checkbox/checkbox
+    include ../../components/masked-text-field/masked-text-field
+    include ../../components/datepicker/datepicker
+    include ../../components/range-slider/range-slider
+    include ../../components/filter-date-select/filter-date-select
+    include ../../components/subscription-text-field/subscription-text-field
     +textField('text-field','Email',null , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field','Email','This is pretty awesome', 'TEXT FIELD','hover','HOVER/FOCUSED')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','0','0')
@@ -21,6 +23,8 @@ block content
     +masked-text-field('masked-text-field','ДД.ММ.ГГГГ','', 'MASKED TEXT FIELD','masked', '')
     +datepicker('name', 'text', 'ДД.ММ.ГГГГ', '', 'DATE DROPDOWN', 'datepicker')
     +filter-date-select('date-select','ДД.ММ.ГГГГ','' , 'FILTER DATE DROPDOWN','masked')
+    +subText('sub-text', 'Email', '', "SUBSCRIPTION TEXT FIELD")
+
 
 
 
