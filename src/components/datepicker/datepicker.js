@@ -1,11 +1,12 @@
-// const ar = document.querySelector(".ar");
-import startDay from "daterangepicker";
 const startDate = document.querySelector(".input-field__start-date");
 const endDate = document.querySelector(".input-field__end-date");
+const dateSelect = document.querySelector(".input-field__input-date-select");
+
 $(function () {
-  const datepicker = $(".input-field__datepicker-wrapper").daterangepicker(
+  const datepicker = $("[date-datepicker]").daterangepicker(
     {
       locale: {
+        language: "ru",
         format: "DD.MM.YYYY",
         daysOfWeek: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
         monthNames: [
@@ -31,6 +32,10 @@ $(function () {
     function () {
       startDate.value = this.startDate.format("DD.MM.YYYY");
       endDate.value = this.endDate.format("DD.MM.YYYY");
+      dateSelect.value =
+        this.startDate.locale("ru").format("DD MMMM") +
+        " - " +
+        this.endDate.locale("ru").format("DD MMMM");
     }
   );
   let arrow =

@@ -1,0 +1,5 @@
+mixin filter-date-select(name, placeholder, value, label, state, stateDescript)
+    div(class=`input-field` class=`input-field__${name}` date-datepicker = true)
+        label(class = `input-field__label` class = `input-field__label-${name}`)=label
+        input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__input`, class = `input-field_${state}`, class = `input-field__input-${name}` ,data-input-field =true)
+        span(class = `input-field__description`)= stateDescript

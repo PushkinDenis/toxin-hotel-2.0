@@ -4,9 +4,10 @@ import("../../components/counter/counter");
 import("../../components/masked-text-field/masked-text-field");
 import("../../components/datepicker/datepicker");
 import("../../components/range-slider/range-slider");
-
-require('wnumb/wNumb');
-require('nouislider/dist/nouislider');
+import("../../components/filter-date-select/filter-date-select");
+import("../../components/input-field/input-field");
+require("wnumb/wNumb");
+require("nouislider/dist/nouislider");
 require("jquery.maskedinput/src/jquery.maskedinput");
 require("jquery-ui/dist/jquery-ui");
 require("moment/moment");
