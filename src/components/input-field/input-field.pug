@@ -7,8 +7,8 @@ mixin inputField(name, type, placeholder, value, label, state, stateDescript, se
 
     else
         label(class = `input-field__label` class = `input-field__label-${name}`)=label
-            div(class = 'input-field__input-wrapper' data-select-input)
-                input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__select`, readonly, data-select-id=`${selectId}`)
+            div(class = 'input-field__input-wrapper' data-select=true)
+                input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__select`, readonly, data-select-input=true)
 
 
 

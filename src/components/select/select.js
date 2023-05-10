@@ -1,20 +1,15 @@
-const selectListArr = document.querySelectorAll("[data-list-id]");
-const selectInputArr = document.querySelectorAll("[data-select-id]");
-document.addEventListener("click", (event) => {
-  if (event.target.dataset.selectId) {
-    const selectId = event.target.dataset.selectId;
-    const listId = selectListArr[+selectId].dataset.listId;
-    if (selectId === listId) {
-      const targetSelect = document.querySelector(
-        `[data-list-id="${String(selectId)}"]`
-      );
-      if (targetSelect.className === "select_hided") {
-        targetSelect.classList.remove("select_hided");
-        targetSelect.classList.add("select__list");
-      } else {
-        targetSelect.classList.remove("select__list");
-        targetSelect.classList.add("select_hided");
-      }
+const selectList = document.querySelectorAll("[data-list]");
+const selectInput = document.querySelectorAll("[data-select-input]");
+
+selectInput.forEach((elem) => {
+  elem.addEventListener("click", () => {
+    const elemList = elem.parentNode.parentNode.nextSibling.nextSibling;
+    if (elemList.className === "select_hided") {
+      elemList.classList.remove("select_hided");
+      elemList.classList.add("select__list");
+    } else {
+      elemList.classList.remove("select__list");
+      elemList.classList.add("select_hided");
     }
-  }
+  });
 });
