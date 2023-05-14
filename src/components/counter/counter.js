@@ -16,11 +16,15 @@ counters.forEach((counter) => {
       selInpElem.value = `${totalCnt} гостя`;
     }
     if (totalCnt > 0) {
+
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "ОЧИСТИТЬ";
     } else {
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "";
+    }
+    if (cntInpVal.value <= 0){
+      cntMinusBtn.classList.add('counter_inactive')
     }
   });
   cntPlusBtn.addEventListener("click", (event) => {
@@ -29,11 +33,16 @@ counters.forEach((counter) => {
     selInpElem.value = `${totalCnt} гостя`;
 
     if (totalCnt > 0) {
+
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "ОЧИСТИТЬ";
     } else {
+
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "";
+    }
+    if(cntInpVal.value >0){
+      cntMinusBtn.classList.remove('counter_inactive')
     }
   });
   let clrBtn =
@@ -42,6 +51,7 @@ counters.forEach((counter) => {
   clrBtn.addEventListener("click", () => {
     selInpElem.value = 0;
     totalCnt = 0;
+    selInpElem.value = "";
     cntValue = 0;
   });
 });
