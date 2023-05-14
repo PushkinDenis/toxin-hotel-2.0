@@ -8,3 +8,6 @@ mixin select (name,type,placeholder,value,label, state, stateDescript, li1,li2,l
                 include ../counter/counter
             li.select__li= li3
                 include ../counter/counter
+            .select__btns-wrapper
+                div(class='select__clr-btn select__btn' data-clr-btn=true data-btn)
+                div(class='select__app-btn select__btn' data-app-btn=true data-btn)='ПРИМЕНИТЬ'

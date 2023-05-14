@@ -32,6 +32,15 @@
     margin: 13px 7px 13px 15px;
     align-items: center;
   }
+  &__btns-wrapper {
+    display: flex;
+    max-width: inherit;
+    justify-content: space-between;
+    padding: 30px 13px 0px 13px;
+    margin-bottom: 13px;
+    @extend %fontH3;
+    color: $colorPurple;
+  }
   &_hided {
     display: none;
   }
