@@ -7,7 +7,8 @@ import("../../components/range-slider/range-slider");
 import("../../components/filter-date-select/filter-date-select");
 import("../../components/input-field/input-field");
 import("../../components/subscription-text-field/subscription-text-field");
-import('../../components/radio-button/radio-button')
+import("../../components/radio-button/radio-button");
+import("../../components/toggle/toggle");
 require("wnumb/wNumb");
 require("nouislider/dist/nouislider");
 require("jquery.maskedinput/src/jquery.maskedinput");
@@ -15,9 +16,3 @@ require("jquery-ui/dist/jquery-ui");
 require("moment/moment");
 require("daterangepicker/daterangepicker");
 require("daterangepicker/daterangepicker.css");
-// $(".block").html("vsvsvsvsvs");
-// $(document).ready(function () {
-//   jQuery(function ($) {
-//     $("#block").mask("99.99.9999", { placeholder: "ДД.ММ.ГГГГ" });
-//   });
-// });

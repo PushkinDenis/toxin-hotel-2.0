@@ -1,5 +1,2 @@
-mixin radioBtn (span)
-    label(class ='radio-button__label')
-        input(type = 'checkbox' class ='radio-button__input' name = 'radio-button')
-        span(class = 'radio-button__ui-input')
-        span(class = 'radio-button__description')=span
+mixin radioBtn (name, span)
+    +inputCheck(name, span)

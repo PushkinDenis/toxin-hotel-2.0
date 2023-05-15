@@ -17,6 +17,7 @@ block content
     include ../../components/filter-date-select/filter-date-select
     include ../../components/subscription-text-field/subscription-text-field
     include ../../components/radio-button/radio-button
+    include ../../components/toggle/toggle
     +textField('text-field','Email',null , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field','Email','This is pretty awesome', 'TEXT FIELD','hover','HOVER/FOCUSED')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','0','0')
@@ -25,7 +26,10 @@ block content
     +datepicker('name', 'text', 'ДД.ММ.ГГГГ', '', 'DATE DROPDOWN', 'datepicker')
     +filter-date-select('date-select','ДД.ММ.ГГГГ','' , 'FILTER DATE DROPDOWN','masked')
     +subText('sub-text', 'Email', '', "SUBSCRIPTION TEXT FIELD")
-    +radioBtn('Мужчины')
+    +radioBtn('radio-button','Мужчины')
+    +inputCheck ('checkbox', 'span')
+    +toggle('toggle', 'span')
+
 
 
 
