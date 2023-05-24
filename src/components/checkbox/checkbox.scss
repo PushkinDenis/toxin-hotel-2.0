@@ -104,6 +104,7 @@
           left: 80%;
           transform: translate(-50%, -50%);
         }
+
         &:checked + .toggle__ui-input::after {
           content: "";
           width: 12px;
@@ -113,6 +114,44 @@
           position: absolute;
           top: 50%;
           left: 20%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    @if ($name == ".like-btn") {
+      &__ui-input {
+        display: flex;
+        justify-content: end;
+      }
+      &__value {
+        border: none;
+        width: 10px;
+        margin-right: 10px;
+        padding: 0;
+        text-align: center;
+        @extend %fontBtn;
+        color: $colorDark25;
+      }
+      &__ui-input::after {
+        content: url("/public/icons/material-icons/favorite.svg");
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+      }
+      &__input {
+        -webkit-appearance: none;
+        &:checked + .like-btn__ui-input .like-btn__value {
+          color: #bc9cff;
+        }
+        &:checked + .like-btn__ui-input {
+          border: 1px solid $colorPurple;
+        }
+        &:checked + .like-btn__ui-input::after {
+          content: url("/public/icons/material-icons/favorite-purp.svg");
+          top: 50%;
+          position: absolute;
+          left: 25%;
           transform: translate(-50%, -50%);
         }
       }

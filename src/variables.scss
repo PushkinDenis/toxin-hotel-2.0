@@ -6,7 +6,7 @@ $colorDark25: #c7c7cf;
 $colorDark5: #f4f4f6;
 $colorPurple: #bc9cff;
 $colorGreen: #6fcf97;
-$greenGrad: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+$greenGrad: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 $colorWhite: #ffffff;
 $border1: solid 1px;
 %fontH1 {
@@ -44,4 +44,9 @@ $border1: solid 1px;
 }
 ul {
   padding-inline-start: 0;
+}
+%fontBtn {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
 }

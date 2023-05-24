@@ -1,5 +1,14 @@
 mixin inputCheck (name, span)
-    label(class =`${name}__label`)
-        input(type = 'checkbox' class =`${name}__input` name = `${name}`)
-        span(class = `${name}__ui-input`)
-        span(class = `${name}__description`)=span
+    case name
+        when 'like-btn'
+            label(class =`${name}__label`)
+                input(type = 'checkbox' class =`${name}__input`)
+                span(class = `${name}__ui-input`)
+                    input(class=`${name}__value` value= 1)
+                span(class = `${name}__description`)=span
+        default
+            label(class =`${name}__label`)
+                input(type = 'checkbox' class =`${name}__input` name = `${name}`)
+                span(class = `${name}__ui-input`)
+                span(class = `${name}__description`)=span
+
