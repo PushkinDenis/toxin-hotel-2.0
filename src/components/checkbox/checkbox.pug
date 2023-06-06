@@ -6,6 +6,12 @@ mixin inputCheck (name, span)
                 span(class = `${name}__ui-input`)
                     input(class=`${name}__value` value= 1)
                 span(class = `${name}__description`)=span
+        when 'rate-btn'
+            div(class =`${name}__label`)
+                each val in [1, 2, 3, 4, 5]
+                    input(type = 'radio' class =`${name}__input` name = `${name}` value = val)
+
+
         default
             label(class =`${name}__label`)
                 input(type = 'checkbox' class =`${name}__input` name = `${name}`)

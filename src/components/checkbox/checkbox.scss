@@ -74,6 +74,11 @@
         }
       }
     }
+    //@if ($name == ".rate-btn") {
+    //  &__input {
+    //    border: $colorWhite;
+    //  }
+    //}
     @if ($name == ".toggle") {
       &__ui-input::after {
         content: "";
