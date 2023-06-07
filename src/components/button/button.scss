@@ -1,0 +1,58 @@
+@import "../../index";
+.button {
+  width: 100px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+  padding: 0;
+  @extend %fontH3;
+  &_frameless{
+    color: $colorPurple;
+    &:hover{
+      color: $colorDark50;
+    }
+  }
+  &_long {
+    position: relative;
+    width: 320px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: $colorWhite;
+
+    &::before {
+      position: absolute;
+      content: url("/public/icons/material-icons/arrow_forward_white.svg");
+      top: 60%;
+      left: 100%;
+      transform: translate(-100%, -60%);
+      padding-right: 11px;
+    }
+  }
+  &_filled {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: $colorWhite;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_unfilled {
+    position: relative;
+    color: $colorPurple;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 22px;
+      padding: 2px;
+      background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      -webkit-mask:
+              linear-gradient(#fff 0 0) content-box,
+              linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+    &:hover{
+      opacity: 0.5;
+    }
+    }
+  }

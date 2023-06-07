@@ -20,6 +20,7 @@ block content
     include ../../components/toggle/toggle
     include ../../components/like-button/like-button
     include ../../components/rate-button/rate-button
+    include ../../components/button/button
     +textField('text-field','Email',null , 'TEXT FIELD','default','DEFAULT')
     +textField('text-field','Email','This is pretty awesome', 'TEXT FIELD','hover','HOVER/FOCUSED')
     +select('select','text','Сколько гостей',null ,'DROPDOWN', null, null, 'Взрослые','Дети','Младенцы','0','0')
@@ -33,6 +34,10 @@ block content
     +toggle('toggle', 'span')
     +likeBtn('like-btn', 'span')
     +rateBtn('rate-btn', 'span')
+    +btn('filled', 'CLICK ME')
+    +btn('unfilled', 'CLICK ME')
+    +btn('long', 'ПЕРЕЙТИ К ОПЛАТЕ')
+    +btn('frameless', 'CLICK ME')
 
 
 
