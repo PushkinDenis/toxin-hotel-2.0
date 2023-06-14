@@ -1,0 +1,10 @@
+mixin pagination(name, label)
+    label(class = "pagination__label")=label
+        div(class = "pagination__wrapper")
+            div(class = "pagination__btn pagination_active")=1
+            div(class = "pagination__btn")=2
+            div(class = "pagination__btn")=3
+            div(class = "pagination__btn")='...'
+            div(class = "pagination__btn")=15
+            div(class = "pagination__btn pagination__next-btn")
+        span(class = 'pagination__description')='1 – 12 из 100+ вариантов аренды'
