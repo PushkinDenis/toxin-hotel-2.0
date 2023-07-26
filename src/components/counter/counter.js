@@ -15,16 +15,15 @@ counters.forEach((counter) => {
       --totalCnt;
       selInpElem.value = `${totalCnt} гостя`;
     }
-    if (totalCnt > 0) {
-
+    if (totalCnt > 0 && selInpElem.name !== "select-small") {
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "ОЧИСТИТЬ";
     } else {
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "";
     }
-    if (cntInpVal.value <= 0){
-      cntMinusBtn.classList.add('counter_inactive')
+    if (cntInpVal.value <= 0) {
+      cntMinusBtn.classList.add("counter_inactive");
     }
   });
   cntPlusBtn.addEventListener("click", (event) => {
@@ -32,17 +31,15 @@ counters.forEach((counter) => {
     ++totalCnt;
     selInpElem.value = `${totalCnt} гостя`;
 
-    if (totalCnt > 0) {
-
+    if (totalCnt > 0 && selInpElem.name !== "select-small") {
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "ОЧИСТИТЬ";
     } else {
-
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "";
     }
-    if(cntInpVal.value >0){
-      cntMinusBtn.classList.remove('counter_inactive')
+    if (cntInpVal.value > 0 && selInpElem.name !== "select-small") {
+      cntMinusBtn.classList.remove("counter_inactive");
     }
   });
   let clrBtn =

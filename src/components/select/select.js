@@ -1,6 +1,5 @@
 const selectList = document.querySelectorAll("[data-list]");
 const selectInput = document.querySelectorAll("[data-select-input]");
-
 selectInput.forEach((elem) => {
   elem.addEventListener("click", () => {
     const elemList = elem.parentNode.parentNode.nextSibling.nextSibling;
