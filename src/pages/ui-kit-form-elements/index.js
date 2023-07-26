@@ -13,6 +13,7 @@ import("../../components/like-button/like-button");
 import("../../components/rate-button/rate-button");
 import("../../components/button/button");
 import("../../components/pagination/pagination");
+import("../../components/bullet-list/bullet-list");
 require("wnumb/wNumb");
 require("nouislider/dist/nouislider");
 require("jquery.maskedinput/src/jquery.maskedinput");

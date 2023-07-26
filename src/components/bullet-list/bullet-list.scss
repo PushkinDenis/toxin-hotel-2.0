@@ -1,0 +1,27 @@
+@import "../../index";
+
+.bullet-list {
+  &__wrapper {
+    display: flex;
+    max-width: 300px;
+    margin: 20px;
+    padding-right: 40px;
+  }
+
+  &__ul {
+    list-style-type: none;
+  }
+  &__li {
+    color: $colorDark75;
+    @extend %fontNormalImp;
+    padding-top: 10px;
+    &:nth-child(1) {
+      padding-top: 0;
+    }
+    &:before {
+      color: $colorDark25;
+      content: "●";
+      padding-right: 10px;
+    }
+  }
+}
