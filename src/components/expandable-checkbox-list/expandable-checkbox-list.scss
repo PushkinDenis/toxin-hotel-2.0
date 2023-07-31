@@ -1,0 +1,57 @@
+@import "../../index";
+.checkbox {
+  &__label {
+    margin: 0;
+    position: relative;
+  }
+}
+.checkbox-list {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 266px;
+  }
+  &__label {
+    position: relative;
+    border: solid 1px red;
+    &::before {
+      position: absolute;
+      content: url("/public/icons/material-icons/expand_more.svg");
+      width: 24px;
+      height: 24px;
+      left: 90%;
+      top: -10%;
+    }
+  }
+  &__li {
+    display: flex;
+    margin-top: 12px;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+  &__span {
+    @extend %fontNormal;
+    color: $colorDark50;
+  }
+  &__ul {
+    position: absolute;
+    justify-self: baseline;
+    align-self: center;
+    margin-top: 5px;
+  }
+  &_hide {
+    display: none;
+  }
+  &_closed {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: url("/public/icons/material-icons/expand_less.svg");
+      width: 24px;
+      height: 24px;
+      left: 90%;
+      top: -10%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+mixin checkboxList (name, label, bullLi1, bullLi2, bullLi3, bullLi4, bullLi5, bullLi6)
+    div(class='checkbox-list__wrapper' data-checklist-wrapper)
+        div(class=`${name}__label`)=label
+            ul(class=`${name}__ul`)
+                li(class= `${name}__li`)
+                    +inputCheck ('checkbox', '')
+                    .checkbox-list__span=bullLi1
+                li(class= `${name}__li`)
+                    +inputCheck ('checkbox', '')
+                    .checkbox-list__span=bullLi2
+                li(class= `${name}__li`)
+                    +inputCheck ('checkbox', '')
+                    .checkbox-list__span=bullLi3
+                li(class= `${name}__li`)
+                    +inputCheck ('checkbox', '')
+                    .checkbox-list__span=bullLi4
+                li(class= `${name}__li`)
+                    +inputCheck ('checkbox', '')
+                    .checkbox-list__span=bullLi5
+                li(class= `${name}__li`)
+                    +inputCheck ('checkbox', '')
+                    .checkbox-list__span=bullLi6

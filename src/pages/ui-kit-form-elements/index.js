@@ -14,6 +14,7 @@ import("../../components/rate-button/rate-button");
 import("../../components/button/button");
 import("../../components/pagination/pagination");
 import("../../components/bullet-list/bullet-list");
+import("../../components/expandable-checkbox-list/expandable-checkbox-list");
 require("wnumb/wNumb");
 require("nouislider/dist/nouislider");
 require("jquery.maskedinput/src/jquery.maskedinput");
