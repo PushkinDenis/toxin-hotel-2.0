@@ -73,10 +73,11 @@ module.exports = {
         use: ["css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpg|jpeg|ico)/,
+        test: /\.(png|jpe?g|gif)$/i,
         type: "asset/resource",
         generator: {
-          filename: "/assets/images/[name].[hash:8][ext]",
+          // output filename of images
+          filename: "assets/img/[name].[hash:8][ext]",
         },
       },
       {

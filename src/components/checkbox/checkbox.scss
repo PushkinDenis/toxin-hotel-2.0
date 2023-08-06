@@ -3,15 +3,8 @@
 @mixin checkInp($name, $width, $height, $borderRad) {
   #{$name} {
     &__label {
-      margin-left: 40px;
-      margin-top: 40px;
       display: flex;
     }
-
-    &__description {
-      padding-left: 10px;
-    }
-
     &__ui-input {
       position: relative;
       width: $width;
