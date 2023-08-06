@@ -1,0 +1,23 @@
+@import "../../index";
+.description {
+  &__wrapper {
+    display: flex;
+    max-width: 280px;
+    border-bottom: 1px solid $colorDark25;
+    margin-bottom: 20px;
+  }
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 17px;
+    padding-left: 10px;
+  }
+  &__label {
+    @extend %fontNormBold;
+    color: $colorDark75;
+  }
+  &__text {
+    @extend %fontNormal;
+    color: $colorDark75;
+  }
+}

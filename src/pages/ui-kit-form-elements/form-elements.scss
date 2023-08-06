@@ -15,6 +15,7 @@
 @use "../../components/pagination/pagination";
 @use "../../components/bullet-list/bullet-list";
 @use "../../components/expandable-checkbox-list/expandable-checkbox-list";
+@use "../../components/description/description.scss";
 .input-field,
 .input-field__datepicker-wrapper,
 .range-slider__wrapper {

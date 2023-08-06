@@ -31,7 +31,11 @@ $border1: solid 1px;
   font-size: 12px;
   line-height: 14px;
 }
-
+%fontNormBold {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
 %fontNormal {
   font-weight: normal;
   font-size: 14px;

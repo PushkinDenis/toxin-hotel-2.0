@@ -1,0 +1,6 @@
+mixin description (iconUrl, lab, text)
+    div(class='description__wrapper')
+        img(class='description__icon' src=src=require(iconUrl)  alt="icon" width='48px' height ='48px')
+        div(class='description__text-wrapper')
+            div(class='description__label')=lab
+            div(class='description__text')=text
