@@ -1,0 +1,18 @@
+@import "../../index";
+
+.rich-checkbox {
+  &__wrapper {
+    display: flex;
+    max-width: 266px;
+  }
+  &__text-label {
+    @extend %fontBoldSmall;
+    color: $colorDark75;
+    margin-left: 10px;
+  }
+  &__text {
+    @extend %fontNormalSmall;
+    color: $colorDark50;
+    margin-top: 5px;
+  }
+}

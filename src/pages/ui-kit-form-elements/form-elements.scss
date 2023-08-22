@@ -17,6 +17,8 @@
 @use "../../components/expandable-checkbox-list/expandable-checkbox-list";
 @use "../../components/description/description.scss";
 @use "../../components/user-review/user-review.scss";
+@use "../../components/rich-checkbox/rich-checkbox";
+
 .input-field,
 .input-field__datepicker-wrapper,
 .range-slider__wrapper {

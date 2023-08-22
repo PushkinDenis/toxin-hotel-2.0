@@ -1,0 +1,6 @@
+mixin richCheckbox(name, label,descriptLab,text)
+    .rich-checkbox__wrapper
+        +inputCheck ('checkbox', '')
+        div(class=`${name}__text-wrapper`)
+            div(class=`${name}__text-label`)=descriptLab
+                div(class=`${name}__text`)=text
