@@ -1,20 +1,45 @@
-mixin inputCheck (name, span)
-    case name
-        when 'like-btn'
-            label(class =`${name}__label`)
-                input(type = 'checkbox' class =`${name}__input`)
-                span(class = `${name}__ui-input`)
-                    input(class=`${name}__value` value= 1)
-                span(class = `${name}__description`)=span
-        when 'rate-btn'
-            div(class =`${name}__wrapper`)
-                each val in [1, 2, 3, 4, 5]
-                    input(type = 'radio' class =`${name}__input` name = `${name}` value = val)
-
-
-        default
-            label(class =`${name}__label`)
-                input(type = 'checkbox' class =`${name}__input` name = `${name}`)
-                span(class = `${name}__ui-input`)
-                span(class = `${name}__description`)=span
-
+//mixin inputCheck (name, span, isDescription)
+//    case name
+//        when 'like-btn'
+//            label(class =`${name}__label`)
+//                input(type = 'checkbox' class =`${name}__input`)
+//                span(class = `${name}__ui-input`)
+//                    input(class=`${name}__value` value= 1)
+//                span(class = `${name}__description`)=span
+//        when 'rate-btn'
+//            div(class =`${name}__wrapper`)
+//                each val in [1, 2, 3, 4, 5]
+//                    input(type = 'radio' class =`${name}__input` name = `${name}` value = val)
+//
+//
+//        default
+//            label(class =`${name}__label`)
+//                input(type = 'checkbox' class =`${name}__input` name = `${name}`)
+//                span(class = `${name}__ui-input`)
+//                span(class = `${name}__description`)=span
+//
+mixin inputCheck (name, span, isDescription)
+    if(name==='like-btn' && isDescription===true)
+        label(class =`${name}__label`)
+            input(type = 'checkbox' class =`${name}__input`)
+            span(class = `${name}__ui-input`)
+                input(class=`${name}__value` value= 1)
+            span(class = `${name}__description`)=span
+    else if(name==='like-btn' && isDescription===false)
+        label(class =`${name}__label`)
+            input(type = 'checkbox' class =`${name}__input`)
+            span(class = `${name}__ui-input`)
+                input(class=`${name}__value` value= 1)
+    else if(name==='rate-btn')
+        div(class =`${name}__wrapper`)
+            each val in [1, 2, 3, 4, 5]
+                input(type = 'radio' class =`${name}__input` name = `${name}` value = val)
+    else if (isDescription===true)
+        label(class =`${name}__label`)
+            input(type = 'checkbox' class =`${name}__input` name = `${name}`)
+            span(class = `${name}__ui-input`)
+            span(class = `${name}__description`)=span
+    else if (isDescription === false)
+        label(class =`${name}__label`)
+            input(type = 'checkbox' class =`${name}__input` name = `${name}`)
+            span(class = `${name}__ui-input`)

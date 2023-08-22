@@ -1,5 +1,6 @@
 @import "../../index";
-
+@import "../../components/checkbox/checkbox";
+@include checkInp(".like-btn", 40px, 20px, 10px, false);
 .rich-checkbox {
   &__wrapper {
     display: flex;
@@ -8,7 +9,6 @@
   &__text-label {
     @extend %fontBoldSmall;
     color: $colorDark75;
-    margin-left: 10px;
   }
   &__text {
     @extend %fontNormalSmall;

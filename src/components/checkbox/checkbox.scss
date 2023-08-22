@@ -1,6 +1,6 @@
 @import "../../index";
 
-@mixin checkInp($name, $width, $height, $borderRad) {
+@mixin checkInp($name, $width, $height, $borderRad, $isDescription) {
   #{$name} {
     &__label {
       display: flex;
@@ -11,6 +11,11 @@
       height: $height;
       border: $border1 $colorDark25;
       border-radius: $borderRad;
+    }
+    @if ($isDescription == true) {
+      &__description {
+        margin-left: 10px;
+      }
     }
 
     @if ($name == ".checkbox") {
@@ -156,4 +161,4 @@
     }
   }
 }
-@include checkInp(".checkbox", 20px, 20px, 4px);
+@include checkInp(".checkbox", 20px, 20px, 4px, true);

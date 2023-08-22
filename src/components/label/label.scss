@@ -1,0 +1,17 @@
+@import "../../index";
+
+.label {
+  &__wrapper {
+    display: flex;
+  }
+  &__text {
+    color: $colorDark100;
+    @extend %fontH3;
+    text-transform: uppercase;
+  }
+  &__text-state {
+    color: $colorDark50;
+    @extend %fontNormalSmall;
+    text-transform: uppercase;
+  }
+}

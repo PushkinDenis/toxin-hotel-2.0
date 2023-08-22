@@ -1,10 +1,9 @@
 mixin userRev (image, name, date, text)
     .user-review__wrapper
-        .user-review__user-information
-            img(class='user-review__avatar' src=require(image) alt='avatar')
-            .user-review__user-text-information
-                div(class='user-review__user-name')=name
-                div(class='user-review__login-date')=date
         .user-review__data
-            +likeBtn('like-btn', '')
+            img(class='user-review__avatar' src=require(image) alt='avatar')
+            +likeBtn('like-btn', '',false)
+        .user-review__user-information
+            div(class='user-review__user-name')=name
+                div(class='user-review__login-date')=date
             .user-review__text=text 
