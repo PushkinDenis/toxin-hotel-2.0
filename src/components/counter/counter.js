@@ -13,12 +13,18 @@ counters.forEach((counter) => {
     if (cntInpVal.value > 0) {
       cntInpVal.value = --cntValue;
       --totalCnt;
-      selInpElem.value = `${totalCnt} гостя`;
+      if (totalCnt < 5 && totalCnt !== 1) {
+        selInpElem.value = `${totalCnt} гостя`;
+      } else if (totalCnt === 1) {
+        selInpElem.value = `${totalCnt} гость`;
+      } else {
+        selInpElem.value = `${totalCnt} гостей`;
+      }
     }
     if (totalCnt > 0 && selInpElem.name !== "select-small") {
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "ОЧИСТИТЬ";
-    } else {
+    } else if (totalCnt <= 0 && selInpElem.name !== "select-small") {
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "";
     }
@@ -29,16 +35,19 @@ counters.forEach((counter) => {
   cntPlusBtn.addEventListener("click", (event) => {
     cntInpVal.value = ++cntValue;
     ++totalCnt;
-    selInpElem.value = `${totalCnt} гостя`;
+    if (totalCnt < 5 && totalCnt !== 1) {
+      selInpElem.value = `${totalCnt} гостя`;
+    } else if (totalCnt === 1) {
+      selInpElem.value = `${totalCnt} гость`;
+    } else {
+      selInpElem.value = `${totalCnt} гостей`;
+    }
 
     if (totalCnt > 0 && selInpElem.name !== "select-small") {
       counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
         "ОЧИСТИТЬ";
-    } else {
-      counter.parentNode.parentNode.lastChild.previousSibling.firstChild.nextSibling.textContent =
-        "";
     }
-    if (cntInpVal.value > 0 && selInpElem.name !== "select-small") {
+    if (cntInpVal.value > 0) {
       cntMinusBtn.classList.remove("counter_inactive");
     }
   });
@@ -46,9 +55,11 @@ counters.forEach((counter) => {
     counter.parentNode.parentNode.lastChild.previousSibling.firstChild
       .nextSibling;
   clrBtn.addEventListener("click", () => {
-    selInpElem.value = 0;
-    totalCnt = 0;
-    selInpElem.value = "";
-    cntValue = 0;
+    if (totalCnt > 0 && selInpElem.name !== "select-small") {
+      selInpElem.value = 0;
+      totalCnt = 0;
+      selInpElem.value = "";
+      cntValue = 0;
+    }
   });
 });

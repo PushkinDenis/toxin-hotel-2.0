@@ -14,8 +14,10 @@ selectInput.forEach((elem) => {
       elemList.classList.add("select_hided");
     }
     addBtn.addEventListener("click", () => {
-      elemList.classList.remove("select__list");
-      elemList.classList.add("select_hided");
+      if (elemInp.name !== "select-small") {
+        elemList.classList.remove("select__list");
+        elemList.classList.add("select_hided");
+      }
     });
   });
 });
