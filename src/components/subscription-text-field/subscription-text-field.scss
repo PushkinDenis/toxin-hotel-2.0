@@ -5,9 +5,16 @@
     &::before {
       position: absolute;
       content: url("/public/icons/material-icons/arrow_forward1.svg");
+      width: 24px;
+      height: 24px;
       justify-self: end;
-      top: 43%;
-      padding-right: 11px;
+      align-self: center;
+      padding-right: 10px;
+      //position: absolute;
+      //content: url("/public/icons/material-icons/arrow_forward1.svg");
+      //justify-self: end;
+      //top: 43%;
+      //padding-right: 11px;
     }
   }
   &__label-sub-text {

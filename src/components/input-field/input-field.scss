@@ -4,11 +4,13 @@
   max-width: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5px;
 
   &__label {
     order: 1;
     color: $colorDark100;
     @extend %fontH3;
+    align-self: self-end;
   }
   &__input {
     order: 3;
@@ -26,6 +28,7 @@
     order: 2;
     color: $colorDark50;
     justify-self: end;
+    align-self: self-start;
   }
   ::-webkit-input-placeholder {
     color: $colorDark25;

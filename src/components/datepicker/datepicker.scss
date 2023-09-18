@@ -3,31 +3,10 @@
 
 .input-field {
   &__datepicker-wrapper {
-    display: grid;
+    display: flex;
     max-width: 320px;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    grid-column-gap: 20px;
-    &::before {
-      position: absolute;
-      content: url("/public/icons/material-icons/expand_more.svg");
-      width: 24px;
-      height: 24px;
-      justify-self: end;
-      align-self: center;
-      padding-right: 12px;
-      top: 43%;
-    }
-    &::after {
-      position: absolute;
-      content: url("/public/icons/material-icons/expand_more.svg");
-      width: 24px;
-      height: 24px;
-      justify-self: start;
-      align-self: center;
-      top: 43%;
-      padding-left: 115px;
-    }
+    justify-content: space-between;
+    margin: 0;
   }
   &__datepicker {
     width: 150px;
@@ -259,3 +238,32 @@ thead tr:nth-child(-n + 1) {
 .daterangepicker.opensright:before {
   display: none;
 }
+
+//.input-field {
+//  &__datepicker-wrapper {
+//    display: grid;
+//    max-width: 320px;
+//    grid-template-columns: 1fr 1fr;
+//    position: relative;
+//    grid-column-gap: 20px;
+//    &::before {
+//      position: absolute;
+//      content: url("/public/icons/material-icons/expand_more.svg");
+//      width: 24px;
+//      height: 24px;
+//      justify-self: end;
+//      align-self: center;
+//      padding-right: 12px;
+//      top: 43%;
+//    }
+//    &::after {
+//      position: absolute;
+//      content: url("/public/icons/material-icons/expand_more.svg");
+//      width: 24px;
+//      height: 24px;
+//      justify-self: start;
+//      align-self: center;
+//      top: 43%;
+//      padding-left: 115px;
+//    }
+//  }

@@ -1,6 +1,6 @@
 mixin datepicker(name, type, placeholder, value, label, elem)
     div(class = 'input-field__datepicker-wrapper' date-datepicker = true)
-        label(class = `input-field__label`)=label
+        div(class='input-field__input-wrapper')
             input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__input`, class = `input-field__${elem}`, class = `input-field__start-date`)
-        label(class = `input-field__label`)=label
+        div(class='input-field__input-wrapper')
             input(name=name, type = type, placeholder = placeholder, value = value, class = `input-field__input`, class = `input-field__${elem}`, class = `input-field__end-date`)

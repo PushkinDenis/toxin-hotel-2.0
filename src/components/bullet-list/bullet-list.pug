@@ -1,7 +1,6 @@
 mixin bulletList (name, label, bullLi1, bullLi2, bullLi3)
     .bullet-list__wrapper
-        label(class=`${name}__label`)=label
-            ul(class=`${name}__ul`)
-                li(class= `${name}__li`)=bullLi1
-                li(class= `${name}__li`)=bullLi2
-                li(class= `${name}__li`)=bullLi3
+        ul(class=`${name}__ul`)
+            li(class= `${name}__li`)=bullLi1
+            li(class= `${name}__li`)=bullLi2
+            li(class= `${name}__li`)=bullLi3

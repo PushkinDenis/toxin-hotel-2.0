@@ -3,7 +3,7 @@ let totalCnt = 0;
 counters.forEach((counter) => {
   const selInpElem =
     counter.previousSibling.parentNode.previousSibling.parentNode
-      .previousSibling.parentNode.firstChild.lastChild.firstChild;
+      .previousSibling.parentNode.firstChild.nextSibling.firstChild;
   let cntValue = 0;
   const cntMinusBtn = counter.firstChild.nextSibling;
   const cntPlusBtn =
