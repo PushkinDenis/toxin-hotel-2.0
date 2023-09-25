@@ -19,3 +19,57 @@
 @use "../../components/user-review/user-review.scss";
 @use "../../components/rich-checkbox/rich-checkbox";
 @use "../../components/label/label";
+@use "../../components/label-state/label-state";
+
+.input-field {
+  &__label-wrapper {
+    display: flex;
+    max-width: 320px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+}
+.ui-kit-form-elements {
+  &__text-fields {
+    display: grid;
+    max-width: 320px;
+    grid-row-gap: 20px;
+  }
+  &__date-text-fields {
+    margin-top: 40px;
+    display: grid;
+    max-width: 320px;
+    grid-row-gap: 40px;
+  }
+  &__checkbox-wrapper {
+    display: grid;
+    max-width: 222px;
+    grid-row-gap: 10px;
+  }
+  &__radio-btn-wrapper {
+    display: grid;
+    max-width: 220px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__radio-btn-label-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  &__toggle-wrapper {
+    display: grid;
+    max-width: 260px;
+    grid-row-gap: 10px;
+  }
+  &__like-btn-wrapper {
+    display: grid;
+    max-width: 90px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  &__like-btn-label-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

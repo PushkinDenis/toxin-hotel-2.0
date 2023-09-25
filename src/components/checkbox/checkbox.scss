@@ -7,7 +7,7 @@
     }
     &__ui-input {
       position: relative;
-      width: $width;
+      min-width: $width;
       height: $height;
       border: $border1 $colorDark25;
       border-radius: $borderRad;
@@ -15,10 +15,16 @@
     @if ($isDescription == true) {
       &__description {
         margin-left: 10px;
+        @extend %fontNormal;
+        color: $colorDark75;
       }
     }
 
     @if ($name == ".checkbox") {
+      &__description {
+        @extend %fontNormal;
+        color: $colorDark50;
+      }
       &__input {
         -webkit-appearance: none;
 
@@ -52,13 +58,18 @@
       }
     }
     @if ($name == ".radio-button") {
+      &__description {
+        @extend %fontNormal;
+        color: $colorDark50;
+      }
       &__input {
         -webkit-appearance: none;
-
+        &:checked + .radio-button__ui-input + .radio-button__description {
+          color: $colorDark75;
+        }
         &:checked + .radio-button__ui-input {
           border: 1px solid $colorPurple;
         }
-
         &:checked + .radio-button__ui-input::before {
           content: "";
           width: 12px;

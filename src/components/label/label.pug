@@ -1,8 +1,3 @@
-mixin label(name,state,text, isState)
-    if(isState===true)
-        div(class=`label__wrapper`)
-            div(class=`${name}__label label__text`)=text
-            div(class=`${name}__label label__text-state`)=state
-    else
-        div(class=`label__wrapper`)
-            div(class=`${name}__label label__text`)=text
+mixin label(name,text)
+    div(class=`label__wrapper`)
+        div(class=`${name}__label label__text`)=text

@@ -3,10 +3,12 @@
 
 .input-field {
   &__datepicker-wrapper {
-    display: flex;
+    display: grid;
     max-width: 320px;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 20px;
   }
   &__datepicker {
     width: 150px;

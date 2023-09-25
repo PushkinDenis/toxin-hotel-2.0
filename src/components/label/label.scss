@@ -3,6 +3,7 @@
 .label {
   &__wrapper {
     display: flex;
+    justify-content: space-between;
   }
   &__text {
     color: $colorDark100;

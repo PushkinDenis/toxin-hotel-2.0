@@ -1,8 +1,7 @@
 .input-field {
   &__date-select {
-    max-width: 266px;
   }
-  &_masked {
-    width: 266px;
-  }
+}
+[date-datepicker-wide] {
+  width: 266px;
 }
