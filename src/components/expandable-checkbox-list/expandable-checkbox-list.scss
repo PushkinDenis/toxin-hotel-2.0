@@ -13,13 +13,14 @@
   }
   &__label {
     position: relative;
+    @extend %fontH3;
     &::before {
       position: absolute;
-      content: url("/public/icons/material-icons/expand_more.svg");
+      content: url("/public/icons/material-icons/expand_less.svg");
       width: 24px;
       height: 24px;
       left: 90%;
-      top: -10%;
+      top: -30%;
     }
   }
   &__li {
@@ -37,6 +38,9 @@
     position: absolute;
     justify-self: baseline;
     align-self: center;
+    z-index: 1;
+    padding-top: 18px;
+    width: 266px;
   }
   &_hide {
     display: none;
@@ -45,11 +49,11 @@
     position: relative;
     &::before {
       position: absolute;
-      content: url("/public/icons/material-icons/expand_less.svg");
+      content: url("/public/icons/material-icons/expand_more.svg");
       width: 24px;
       height: 24px;
       left: 90%;
-      top: -10%;
+      top: -30%;
     }
   }
 }

@@ -7,16 +7,18 @@
   outline: none;
   padding: 0;
   @extend %fontH3;
-  &_frameless{
+  &_frameless {
+    width: fit-content;
+    height: fit-content;
     color: $colorPurple;
-    &:hover{
+    &:hover {
       color: $colorDark50;
     }
   }
   &_long {
     position: relative;
     width: 320px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: $colorWhite;
 
     &::before {
@@ -29,9 +31,9 @@
     }
   }
   &_filled {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: $colorWhite;
-    &:hover{
+    &:hover {
       opacity: 0.5;
     }
   }
@@ -44,15 +46,14 @@
       inset: 0;
       border-radius: 22px;
       padding: 2px;
-      background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      -webkit-mask:
-              linear-gradient(#fff 0 0) content-box,
-              linear-gradient(#fff 0 0);
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
     }
-    &:hover{
+    &:hover {
       opacity: 0.5;
     }
-    }
   }
+}

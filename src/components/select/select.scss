@@ -32,8 +32,11 @@
       display: flex;
       max-width: inherit;
       justify-content: space-between;
-      margin: 13px 7px 13px 15px;
+      margin: 8px 8px 8px 15px;
       align-items: center;
+      @extend %fontH3;
+      color: $colorDark100;
+      text-transform: uppercase;
     }
 
     &__btns-wrapper {
@@ -50,7 +53,7 @@
       display: none;
     }
     &_small {
-      max-width: 260px;
+      max-width: 266px;
     }
   }
 

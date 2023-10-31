@@ -28,6 +28,9 @@
     justify-content: space-between;
     margin-bottom: 5px;
   }
+  &__label-checkbox-wrapper {
+    margin-bottom: 6px;
+  }
 }
 .ui-kit-form-elements {
   &__text-fields {
@@ -39,6 +42,12 @@
     margin-top: 40px;
     display: grid;
     max-width: 320px;
+    grid-row-gap: 40px;
+  }
+  &__checkboxes {
+    margin-top: 40px;
+    display: grid;
+    max-width: 260px;
     grid-row-gap: 40px;
   }
   &__checkbox-wrapper {
@@ -71,5 +80,74 @@
   &__like-btn-label-wrapper {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+  &__rate-btn-wrapper {
+    display: grid;
+    max-width: 260px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__rate-label-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  &__button-wrapper {
+    display: grid;
+    max-width: 320px;
+    grid-template-columns: 99px 99px 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    & .button_long {
+      grid-column: span 3;
+    }
+  }
+  &__frameless-buttons-wrapper {
+    display: flex;
+    grid-column: span 2;
+
+    & .button_frameless:nth-child(2) {
+      margin-left: 20px;
+    }
+  }
+  &__filled-buttons-wrapper {
+    margin-top: 10px;
+    display: flex;
+    grid-column: span 2;
+    & .button_filled:nth-child(2) {
+      margin-left: 20px;
+    }
+  }
+  &__unfilled-buttons-wrapper {
+    display: flex;
+    grid-column: span 2;
+    & .button_unfilled:nth-child(2) {
+      margin-left: 20px;
+    }
+  }
+  &__pagination-label-wrapper {
+    margin-bottom: 16px;
+  }
+  &__pagination-wrapper {
+    margin-top: 40px;
+  }
+  &__dropdowns-first-clmn {
+    display: flex;
+    flex-direction: column;
+    max-width: 266px;
+  }
+  &__dropdown-state-wrapper {
+    display: grid;
+    grid-row-gap: 20px;
+    max-width: 266px;
+  }
+  &__checkboxes-list-wrapper {
+    display: grid;
+    grid-row-gap: 50px;
+    margin-top: 170px;
+  }
+  &__descriptions-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 292px;
   }
 }
